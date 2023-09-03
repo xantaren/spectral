@@ -2,7 +2,7 @@
 other = "Menu"
 
 [learnmore]
-other = "Learn More"
+other = "Wait,there's more"
 
 [name]
 other = "Name"
@@ -26,7 +26,7 @@ other = "send"
 other = "reset"
 
 [allarticles]
-other = "all articles"
+other = """My Space"""
 
 [readmore]
 other = "Read more…"
