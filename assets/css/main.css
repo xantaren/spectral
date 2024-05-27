@@ -2835,10 +2835,18 @@ input, select, textarea {
 			margin: 0 auto;
 		}
 
+		.wrapper.style5 > .inner{
+			width: 45em;
+		}
+
 			@media screen and (max-width: 1280px) {
 
 				.wrapper > .inner {
 					width: 90%;
+				}
+
+				.wrapper.style5 > .inner{
+					width: 75%;
 				}
 
 			}
@@ -2847,6 +2855,10 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					width: 100%;
+				}
+
+				.wrapper.style5 > .inner{
+					width: 90%;
 				}
 
 			}
