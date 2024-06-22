@@ -13,7 +13,14 @@
 
 	{{ template "_internal/google_analytics.html" . }}
 
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . | plainify }}">{{ end }}
+    {{ $description := "" }}
+      {{ if .Description }}
+        {{ $description = .Description }}
+      {{ else }}
+        {{ $description = .Site.Params.description }}
+    {{ end }}
+    <meta name="description" content="{{ $description }}">
+
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
