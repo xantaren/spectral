@@ -10,7 +10,9 @@
         <div class="inner">
             {{ .Content }}
         </div>
-        {{ template "_internal/disqus.html" . }}
+        <div class="inner">
+            {{ template "_internal/disqus.html" . }}
+        </div>
     </section>
 </article>
 {{ partial "footer.html" . }}
